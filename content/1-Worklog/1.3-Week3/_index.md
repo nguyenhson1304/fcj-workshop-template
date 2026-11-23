@@ -1,57 +1,34 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-10-19
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
+<!-- {{% notice warning %}} 
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+{{% /notice %}} -->
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Understand AWS Storage options: Object Storage (Amazon S3), Block Storage (Amazon EBS), and File Storage (Amazon EFS)
+- Master Amazon S3 features: Storage Classes, Versioning, Lifecycle Policies, Bucket Policies, and Encryption
+- Understand Relational Databases (Amazon RDS) vs. NoSQL Databases (Amazon DynamoDB)
+- Deploy a full-stack web/CRUD application connecting EC2 to Amazon RDS
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 1 | - Study Amazon S3 in depth: <br>&emsp; + Buckets, Objects, Prefixes & Partitioning <br>&emsp; + S3 Storage Classes (Standard, IA, Glacier) & Lifecycle Rules <br>&emsp; + Block Public Access, Bucket Policies & Pre-signed URLs | 19/10/2026 | 19/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 2 | - **Practice (Storage):** <br>&emsp; + Create S3 buckets, enable Versioning, and configure Lifecycle transitions <br>&emsp; + Create EBS Snapshots and test Amazon EFS shared mounting across two EC2 instances | 20/10/2026 | 20/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 3 | - Study Relational Databases (Amazon RDS & Aurora): <br>&emsp; + DB Subnet Groups, Multi-AZ vs. Read Replicas <br>&emsp; + Automated Backups & Security Group chaining | 21/10/2026 | 21/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 4 | - **Practice (EC2 + RDS Integration):** <br>&emsp; + Launch an Amazon RDS (MySQL/PostgreSQL) instance in a private subnet <br>&emsp; + Deploy a Node.js CRUD application on EC2 managed by `pm2` <br>&emsp; + Configure `.env` with the RDS endpoint and verify database connectivity | 22/10/2026 | 22/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 5 | - Study NoSQL Databases (Amazon DynamoDB) & Caching (ElastiCache): <br>&emsp; + Partition Keys, Sort Keys, GSI/LSI <br>&emsp; + Provisioned vs. On-Demand Capacity Modes & DynamoDB Streams | 23/10/2026 | 23/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 6 | - **Practice (DynamoDB):** <br>&emsp; + Create a DynamoDB table, insert/query items via AWS CLI and Python `boto3` <br>&emsp; + Clean up RDS and EC2 lab resources | 24/10/2026 | 24/10/2026 | https://cloudjourney.awsfcaj.com/ |
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Mastered Amazon S3 data lifecycle management and security controls, which serve as the foundation for cloud Data Lakes[cite: 1].
+- Successfully deployed a Node.js CRUD application on EC2 using PM2, connected it to a private Amazon RDS instance, and resolved DNS/Security Group networking issues[cite: 3].
+- Learned how to model NoSQL data in Amazon DynamoDB and interact with both S3 and DynamoDB programmatically using Python `boto3`[cite: 2].

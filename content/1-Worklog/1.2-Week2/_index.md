@@ -1,57 +1,35 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-10-12
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
+<!-- {{% notice warning %}} 
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+{{% /notice %}} -->
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Deep dive into Amazon VPC architecture (CIDR blocks, Public vs. Private Subnets, Internet Gateway, NAT Gateway)
+- Understand stateful Security Groups vs. stateless Network ACLs (NACLs)
+- Master Amazon EC2 lifecycle, purchasing options (On-Demand, Spot, Reserved), User Data, and Instance Roles
+- Learn Elastic Load Balancing (ALB) and EC2 Auto Scaling Groups (ASG) for High Availability
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 1 | - Study Amazon VPC fundamentals: <br>&emsp; + IPv4 CIDR block planning <br>&emsp; + Public Subnets vs. Private Subnets <br>&emsp; + Route Tables, Internet Gateways (IGW), and NAT Gateways | 12/10/2026 | 12/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 2 | - **Practice (Networking):** <br>&emsp; + Design and build a custom multi-AZ VPC from scratch <br>&emsp; + Configure public and private route tables <br>&emsp; + Configure Security Groups and NACLs | 13/10/2026 | 13/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 3 | - Study Amazon EC2 advanced concepts: <br>&emsp; + EC2 User Data bootstrapping scripts <br>&emsp; + IAM Instance Profiles (attaching IAM Roles to EC2 instead of hardcoding credentials) <br>&emsp; + AWS Systems Manager (SSM) Session Manager | 14/10/2026 | 14/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 4 | - **Practice (EC2 & IAM Role):** <br>&emsp; + Launch an EC2 instance in a private subnet <br>&emsp; + Attach an IAM Role to EC2 and access S3 via `boto3` / AWS CLI without Access Keys <br>&emsp; + Connect securely using SSM Session Manager | 15/10/2026 | 15/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 5 | - Learn High Availability & Scalability: <br>&emsp; + Application Load Balancer (ALB) & Target Groups <br>&emsp; + Launch Templates & EC2 Auto Scaling Groups (ASG) | 16/10/2026 | 16/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 6 | - **Practice (HA Architecture) & Cleanup:** <br>&emsp; + Deploy an ALB distributing HTTP traffic across EC2 instances in two Availability Zones <br>&emsp; + Verify orphan resource cleanup (EBS volumes, Elastic IPs, NAT Gateways) via Cost Explorer | 17/10/2026 | 17/10/2026 | https://cloudjourney.awsfcaj.com/ |
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Built a custom Amazon VPC with isolated public and private subnets across multiple Availability Zones.
+- Understood why attaching **IAM Roles** to EC2 instances is a security best practice compared to storing static Access Keys in code[cite: 1, 2].
+- Configured an Application Load Balancer (ALB) with Auto Scaling to handle traffic spikes and ensure fault tolerance.
+- Practiced proper cloud hygiene by auditing and deleting unattached EBS volumes and Elastic IPs to avoid unintended `EC2-Other` charges[cite: 4].

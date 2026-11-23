@@ -1,57 +1,34 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-11-09
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
+<!-- {{% notice warning %}} 
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+{{% /notice %}} -->
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Master Monitoring, Logging, and Automated Alerting with **Amazon CloudWatch** and **Amazon SNS**
+- Understand Infrastructure as Code (IaC) basics with **AWS CloudFormation**
+- Apply the **AWS Well-Architected Framework** (6 Pillars) and **AWS Pricing Calculator** for cost modeling
+- Review FCAJ Proposal & Workshop rubric requirements and finalize the Data Engineering project scope for Week 7
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 1 | - Study Observability & Monitoring: <br>&emsp; + Amazon CloudWatch Logs, Custom Metrics, Dashboards, and Alarms <br>&emsp; + Automated email/alert notifications via CloudWatch Alarms + SNS | 09/11/2026 | 09/11/2026 | https://cloudjourney.awsfcaj.com/ |
+| 2 | - **Practice (CloudWatch & IaC):** <br>&emsp; + Configure CloudWatch Metric Filters and Alarms on Lambda/Glue error logs <br>&emsp; + Deploy a basic S3 + IAM + Lambda stack using AWS CloudFormation YAML | 10/11/2026 | 10/11/2026 | https://cloudjourney.awsfcaj.com/ |
+| 3 | - Study AWS Well-Architected Framework & FinOps: <br>&emsp; + Review the 6 Pillars (Operational Excellence, Security, Reliability, Performance, Cost Optimization, Sustainability) <br>&emsp; + Practice estimating workload costs in AWS Pricing Calculator | 11/11/2026 | 11/11/2026 | https://calculator.aws/ |
+| 4 | - Review FCAJ Proposal & Workshop Guidelines: <br>&emsp; + Study Proposal (`/2-proposal/`) vs. Workshop (`/5-workshop/`) structure <br>&emsp; + Review strict rubric rules (manual AWS Architecture diagram, Cost Estimation, Security Least Privilege, Reproducibility, Live Demo, Bilingual `vi`/`en`) | 12/11/2026 | 12/11/2026 | 1. https://workshop-sample.awsfcaj.com/2-proposal/ <br> 2. https://workshop-sample.awsfcaj.com/5-workshop/ |
+| 5 | - Select Data Engineering Project Topic & Dataset: <br>&emsp; + Define real-world problem statement, target dataset/producer, and success KPIs <br>&emsp; + Map out end-to-end AWS services (S3, Lambda/Glue, Athena, CloudWatch, SNS, IAM) | 13/11/2026 | 13/11/2026 | https://cloudjourney.awsfcaj.com/ |
+| 6 | - Draft Initial Architecture & Mentor Alignment: <br>&emsp; + Sketch initial architecture diagram in draw.io using official AWS icons <br>&emsp; + Confirm project scope and Week 7–12 milestones with FCAJ mentor | 14/11/2026 | 14/11/2026 | https://workshop-sample.awsfcaj.com/2-proposal/ |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Configured CloudWatch Logs, Metrics, and SNS Alarms for automated failure detection[cite: 1, 2].
+- Completed the 6-week AWS Foundations phase covering core infrastructure, security, serverless, data engineering, and Well-Architected best practices[cite: 1, 2].
+- Selected the Data Engineering project topic and aligned the initial architecture and timeline with the FCAJ mentor to begin project execution in Week 7[cite: 1, 2].

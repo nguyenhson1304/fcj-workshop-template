@@ -1,57 +1,39 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-10-05
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
+<!-- {{% notice warning %}} 
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+{{% /notice %}} -->
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Watch the introductory video about the First Cloud AI Journey (FCAJ) program
+- Connect and get acquainted with members and mentors of First Cloud AI Journey
+- Set up the local Hugo workshop documentation repository (fork, clone, and run local preview)
+- Draw basic AWS architecture diagrams on draw.io
+- Read and take note of internship unit rules and regulations
+- Understand basic AWS services, Global Infrastructure, and how to use the AWS Management Console & AWS CLI
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 1 | - Watch the introductory video about this program <br> - Get acquainted with FCAJ members <br> - Fork & clone the `fcj-workshop-template` GitHub repository and set up Hugo locally | 05/10/2026 | 05/10/2026 | 1. https://youtu.be/AQlsd0nWdZk?si=5Oo3c9YQ7nvjW9G2 <br> 2. https://github.com/thienluhoan/fcj-workshop-template |
+| 2 | - Draw AWS architecture diagrams on draw.io using official AWS icons <br> - Read and take note of internship unit rules and regulations | 06/10/2026 | 06/10/2026 | 1. https://hcm-rules.awsfcaj.com/1-regulations/ <br> 2. https://youtu.be/l8isyDe-GwY?si=F5kKlwC5ExutL2yQ |
+| 3 | - Learn about AWS foundations and basics: <br>&emsp; + Why Cloud Computing & AWS? <br>&emsp; + AWS Global Infrastructure (Regions, Availability Zones, Edge Locations) <br>&emsp; + Shared Responsibility Model | 07/10/2026 | 07/10/2026 | https://www.youtube.com/playlist?list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i |
+| 4 | - Create AWS Free Tier account <br> - Get familiar with AWS Management Console <br> - Set up Billing Alerts, AWS Budgets, and inspect Cost Explorer <br> **Practice:** <br>&emsp; + Enable MFA on Root account <br>&emsp; + Create Zero-Spend & Monthly Cost Budgets | 08/10/2026 | 08/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 5 | - Learn AWS IAM, Amazon VPC & Amazon EC2 basics: <br>&emsp; + IAM Users, Groups, Roles & Policies <br>&emsp; + Subnets, Route Tables, Security Groups <br>&emsp; + EC2 Instance Types, Key Pairs & AMIs | 09/10/2026 | 09/10/2026 | https://cloudjourney.awsfcaj.com/ |
+| 6 | - **Practice:** <br>&emsp; + Launch an Amazon Linux EC2 instance <br>&emsp; + Connect via SSH / EC2 Instance Connect <br>&emsp; + Attach, format, and mount an EBS volume <br>&emsp; + Configure AWS CLI locally (`aws configure`) | 10/10/2026 | 10/10/2026 | https://cloudjourney.awsfcaj.com/ |
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Connected with FCAJ mentors and fellow interns, and understood the program roadmap, rules, and workshop evaluation criteria[cite: 1, 2].
+- Successfully forked and configured the Hugo static site template (`fcj-workshop-template`) locally to document weekly progress[cite: 2].
+- Understood AWS Global Infrastructure and core service domains (Compute, Storage, Networking, Database, Security).
+- Created and secured an AWS Free Tier account with MFA and AWS Budgets to prevent unexpected charges.
+- Installed and configured AWS CLI (`Access Key`, `Secret Key`, `Default Region`) and practiced basic CLI operations (`aws sts get-caller-identity`, `aws ec2 describe-regions`, `aws ec2 describe-instances`).
+- Launched an Amazon Linux EC2 instance, connected via SSH/EC2 Instance Connect, and attached an EBS volume[cite: 2].

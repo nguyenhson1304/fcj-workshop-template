@@ -29,6 +29,6 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Achievements:
 
-- Mastered Amazon S3 data lifecycle management and security controls, which serve as the foundation for cloud Data Lakes[cite: 1].
-- Successfully deployed a Node.js CRUD application on EC2 using PM2, connected it to a private Amazon RDS instance, and resolved DNS/Security Group networking issues[cite: 3].
-- Learned how to model NoSQL data in Amazon DynamoDB and interact with both S3 and DynamoDB programmatically using Python `boto3`[cite: 2].
+- Mastered Amazon S3 data lifecycle management and security controls, which serve as the foundation for cloud Data Lakes.
+- Successfully deployed a Node.js CRUD application on EC2 using PM2, connected it to a private Amazon RDS instance, and resolved DNS/Security Group networking issues.
+- Learned how to model NoSQL data in Amazon DynamoDB and interact with both S3 and DynamoDB programmatically using Python `boto3`.

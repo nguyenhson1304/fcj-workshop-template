@@ -29,6 +29,6 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Achievements:
 
-- Configured CloudWatch Logs, Metrics, and SNS Alarms for automated failure detection[cite: 1, 2].
-- Completed the 6-week AWS Foundations phase covering core infrastructure, security, serverless, data engineering, and Well-Architected best practices[cite: 1, 2].
-- Selected the Data Engineering project topic and aligned the initial architecture and timeline with the FCAJ mentor to begin project execution in Week 7[cite: 1, 2].
+- Configured CloudWatch Logs, Metrics, and SNS Alarms for automated failure detection.
+- Completed the 6-week AWS Foundations phase covering core infrastructure, security, serverless, data engineering, and Well-Architected best practices.
+- Selected the Data Engineering project topic and aligned the initial architecture and timeline with the FCAJ mentor to begin project execution in Week 7.

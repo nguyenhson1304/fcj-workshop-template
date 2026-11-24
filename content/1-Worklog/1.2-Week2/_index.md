@@ -30,6 +30,6 @@ pre: " <b> 1.2. </b> "
 ### Week 2 Achievements:
 
 - Built a custom Amazon VPC with isolated public and private subnets across multiple Availability Zones.
-- Understood why attaching **IAM Roles** to EC2 instances is a security best practice compared to storing static Access Keys in code[cite: 1, 2].
+- Understood why attaching **IAM Roles** to EC2 instances is a security best practice compared to storing static Access Keys in code.
 - Configured an Application Load Balancer (ALB) with Auto Scaling to handle traffic spikes and ensure fault tolerance.
-- Practiced proper cloud hygiene by auditing and deleting unattached EBS volumes and Elastic IPs to avoid unintended `EC2-Other` charges[cite: 4].
+- Practiced proper cloud hygiene by auditing and deleting unattached EBS volumes and Elastic IPs to avoid unintended `EC2-Other` charges.

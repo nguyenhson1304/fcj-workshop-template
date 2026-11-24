@@ -29,6 +29,6 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Achievements:
 
-- Built a multi-tier S3 Data Lake and automated schema discovery with AWS Glue Crawlers[cite: 1, 2].
-- Converted raw datasets into partitioned Apache Parquet format, significantly reducing Amazon Athena query scan volume and cost[cite: 1, 2].
-- Simulated real-time streaming ingestion using a Python data producer paired with Amazon Data Firehose[cite: 1, 2].
+- Built a multi-tier S3 Data Lake and automated schema discovery with AWS Glue Crawlers.
+- Converted raw datasets into partitioned Apache Parquet format, significantly reducing Amazon Athena query scan volume and cost.
+- Simulated real-time streaming ingestion using a Python data producer paired with Amazon Data Firehose.

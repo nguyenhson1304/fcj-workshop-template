@@ -31,9 +31,9 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Achievements:
 
-- Connected with FCAJ mentors and fellow interns, and understood the program roadmap, rules, and workshop evaluation criteria[cite: 1, 2].
-- Successfully forked and configured the Hugo static site template (`fcj-workshop-template`) locally to document weekly progress[cite: 2].
+- Connected with FCAJ mentors and fellow interns, and understood the program roadmap, rules, and workshop evaluation criteria.
+- Successfully forked and configured the Hugo static site template (`fcj-workshop-template`) locally to document weekly progress.
 - Understood AWS Global Infrastructure and core service domains (Compute, Storage, Networking, Database, Security).
 - Created and secured an AWS Free Tier account with MFA and AWS Budgets to prevent unexpected charges.
 - Installed and configured AWS CLI (`Access Key`, `Secret Key`, `Default Region`) and practiced basic CLI operations (`aws sts get-caller-identity`, `aws ec2 describe-regions`, `aws ec2 describe-instances`).
-- Launched an Amazon Linux EC2 instance, connected via SSH/EC2 Instance Connect, and attached an EBS volume[cite: 2].
+- Launched an Amazon Linux EC2 instance, connected via SSH/EC2 Instance Connect, and attached an EBS volume.

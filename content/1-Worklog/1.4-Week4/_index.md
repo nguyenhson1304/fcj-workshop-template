@@ -28,6 +28,6 @@ pre: " <b> 1.4. </b> "
 
 ### Week 4 Achievements:
 
-- Applied the Principle of Least Privilege in IAM and eliminated hardcoded secrets using AWS Secrets Manager and KMS[cite: 1, 2].
-- Built event-driven serverless functions in AWS Lambda triggered directly by S3 events[cite: 1, 2].
-- Designed decoupled, fault-tolerant workflows using SQS Dead-Letter Queues and AWS Step Functions[cite: 1, 2].
+- Applied the Principle of Least Privilege in IAM and eliminated hardcoded secrets using AWS Secrets Manager and KMS.
+- Built event-driven serverless functions in AWS Lambda triggered directly by S3 events.
+- Designed decoupled, fault-tolerant workflows using SQS Dead-Letter Queues and AWS Step Functions.
